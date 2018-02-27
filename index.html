@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="App">
   <head>
     <meta charset="utf-8">
-    <title>coursera angularjs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <title>Angular App</title>
   </head>
-  <body>
-    Welcome to angulars
+  <body ng-controller="AppController">
+    <div>
+    	Name:
+    	<input type="text" ng-model="name" ng-keyup="calculateNumber()">
+    </div>
+    <div>
+    	The total value of the name characters is {{totalValue}}
+    </div>
   </body>
 </html>
